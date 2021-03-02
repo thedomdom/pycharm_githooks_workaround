@@ -9,12 +9,14 @@ git-hook. This speeds up common PyCharm git command significantly.
 ## Requirements:
 
 - **Platform:** MacOS (but the scripts might work with some modifications also on other platforms).
-- **Shell:** `bash`
-- miniconda (v3) installed using Homebrew (recommended approach to combining Homebrew and Conda)
+- **Shell:** `zsh`
 - Python v2 or v3
 
 ## Setup:
 
-PyCharm->Preferences->Version Control->git->Path to git executable: Select `git_wrapper.sh`. Can 
-be set up globally (for all projects).
+- Replace contents of `.conda_init` with the respective contents in your `.zshrc` file.
 
+    - If you can't find the contents in `.zshrc`, please run `conda init zsh` first.
+
+- PyCharm->Preferences->Version Control->git->Path to git executable: Select `git_wrapper.sh`. Can 
+be set up globally (for all projects).
